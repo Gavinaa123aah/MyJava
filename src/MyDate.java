@@ -2,6 +2,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
+//transfer format between string and date
 public class MyDate {
     public static void dayDiff(String date1, String date2){
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
@@ -20,6 +21,7 @@ public class MyDate {
     }
     public static void main(String[] args) {
         dayDiff("2019-12-20 14:20:10","2019-12-31 14:20:35");
+
         Date date = new Date();
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
         System.out.println(simpleDateFormat.format(date).getClass().getSimpleName());
