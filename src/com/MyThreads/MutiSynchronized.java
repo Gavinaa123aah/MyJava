@@ -1,4 +1,4 @@
-
+package com.MyThreads;
 
 public class MutiSynchronized implements Runnable{
     private String data;

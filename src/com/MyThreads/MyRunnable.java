@@ -1,3 +1,5 @@
+package com.MyThreads;
+
 public class MyRunnable implements Runnable{
 
     private String name;

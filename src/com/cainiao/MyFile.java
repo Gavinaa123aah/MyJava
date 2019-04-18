@@ -78,10 +78,36 @@ public class MyFile {
 
     }
 
+    /**
+     * 按字节读取后转码
+     */
+    static void read_file3(){
+        String str="";
+        try {
+            InputStream inputStream = new FileInputStream("text.txt");
+            int size = inputStream.available();
+            byte[] buffer = new byte[size];
+            inputStream.read(buffer);
+            str = new String(buffer,"UTF-8");
+
+            System.out.println(str);
+
+        }catch (Exception E){
+            E.printStackTrace();
+        }
+
+
+
+    }
+    /**
+     *
+     * @param args
+     * @throws FileNotFoundException
+     * @throws IOException
+     */
+
     public static void main(String args[]) throws FileNotFoundException, IOException {
 
-        write_file2();
-        read_file();
-        read_file2();
+       read_file3();
     }
 }

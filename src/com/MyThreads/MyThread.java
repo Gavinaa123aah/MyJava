@@ -1,3 +1,5 @@
+package com.MyThreads;
+
 public class MyThread extends Thread {
     private String name;
     public MyThread(String name){
