@@ -34,6 +34,13 @@ public class QuickSort   {
         for (int i=0;i<result.length;i++){
             System.out.println(result[i]);
         }
+        String s = "aaaa";
+
     }
 
 }
+/**
+ *
+ * 1.所有对象继承与Object,equals是Object中的方法，Object中的equals调用了"=="
+ */
+

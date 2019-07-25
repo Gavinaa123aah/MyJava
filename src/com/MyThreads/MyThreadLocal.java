@@ -30,6 +30,9 @@ public class MyThreadLocal {
     public static void main(String[] args) throws InterruptedException {
         final MyThreadLocal test = new MyThreadLocal();
 
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("adadad");
+        stringBuilder.toString().toCharArray();
 
 //        test.set();
         System.out.println(test.getLong());
