@@ -30,6 +30,7 @@ s1,s3内存地址相等，所以对于s1==s3或s1.equals(s3)返回的都是true
 
 s2,s4内存地址不相等，内容相等。所以s2==s4返回false,s1==s3返回true
 
+String类重写了equals()方法源码如下：
 
 ```
     public boolean equals(Object anObject) {
