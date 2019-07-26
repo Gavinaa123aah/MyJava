@@ -72,8 +72,6 @@
     (3)集合（HashMap/HashTable/Set）是如何判断两个对象是否重复呢？ 分两步：
         第1步：判断连个对象的hashcode是否相等，若不相等，则两个对象不相等；若相等，则转入2步。
         第2步：判断两个对象用equals运算是否相等，若不相等，则认为两个对象不相等；若相等，则认为两个对象相等
-    
-    (4)可参考网址例子：[Google](http://www.google.com/)
 
 # 5.重写了euqals()就要重写hashcode()方法。why?
     (1)Object中的euqals()和hashcode()是一对。若都没有重写，在存入集合的时候，两个地址不同的对象会有不同的hashcode,存到集合中不同的位置;
@@ -82,3 +80,5 @@
     (2)而当equals被重写的时候，比如重写了Student对象中的equals(),比较Student对象的name。此时两个相同name，不同的Student对象，equals(）
     是返回true的。我们希望这两个对象被存在集合中的同一个地方，用链表链起来。所以不得不重写hashcode()。若不重写根据Object的hashcode()去
     计算,会将其存储在集合散列表的不同位置
+    
+# 6.[参考网址](https://www.cnblogs.com/Qian123/p/5703507.html)
