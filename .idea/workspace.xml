@@ -41,13 +41,13 @@
           <entry key="dummy" value="4" />
           <entry key="ft" value="117" />
           <entry key="java" value="2501" />
-          <entry key="md" value="1159" />
+          <entry key="md" value="1289" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="2505" />
-          <entry key="Markdown" value="1155" />
+          <entry key="Markdown" value="1285" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="VTL" value="117" />
         </counts>
@@ -119,8 +119,8 @@
         <entry file="file://$PROJECT_DIR$/src/com/myJava/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="447">
-                <caret line="83" column="58" selection-start-line="83" selection-start-column="58" selection-end-line="83" selection-end-column="58" />
+              <first_editor relative-caret-position="402">
+                <caret line="81" column="57" selection-start-line="81" selection-start-column="57" selection-end-line="81" selection-end-column="57" />
               </first_editor>
               <second_editor />
             </state>
@@ -291,7 +291,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564160553262" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564161134239" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
@@ -374,12 +374,12 @@
       <workItem from="1559812976824" duration="1593000" />
       <workItem from="1560054231991" duration="2925000" />
       <workItem from="1560150066745" duration="4561000" />
-      <workItem from="1563981414934" duration="9770000" />
+      <workItem from="1563981414934" duration="10247000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18849000" />
+    <option name="totallyTimeSpent" value="19326000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -581,8 +581,8 @@
     <entry file="file://$PROJECT_DIR$/src/com/myJava/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="447">
-            <caret line="83" column="58" selection-start-line="83" selection-start-column="58" selection-end-line="83" selection-end-column="58" />
+          <first_editor relative-caret-position="402">
+            <caret line="81" column="57" selection-start-line="81" selection-start-column="57" selection-end-line="81" selection-end-column="57" />
           </first_editor>
           <second_editor />
         </state>

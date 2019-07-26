@@ -74,11 +74,11 @@
         第2步：判断两个对象用equals运算是否相等，若不相等，则认为两个对象不相等；若相等，则认为两个对象相等
 
 # 5.重写了euqals()就要重写hashcode()方法。why?
-    (1)Object中的euqals()和hashcode()是一对。若都没有重写，在存入集合的时候，两个地址不同的对象会有不同的hashcode,存到集合中不同的位置;
-    当hashcode一样时，用equals去比较，会得到false(两个地址不同)，存到集合中的同一位置，用链表链起来。
+    (1)Object中的euqals()和hashcode()是一对。例：new两个对象A.B.若都没有重写，在存入集合的时候，当两个地址计算得到不同的hashcode时，
+    存到集合中不同的位置; 当hashcode一样（hash碰撞）时，用equals去比较，会得到false(两个地址不同)，存到集合中的同一位置，用链表链起来。
     
-    (2)而当equals被重写的时候，比如重写了Student对象中的equals(),比较Student对象的name。此时两个相同name，不同的Student对象，equals(）
-    是返回true的。我们希望这两个对象被存在集合中的同一个地方，用链表链起来。所以不得不重写hashcode()。若不重写根据Object的hashcode()去
-    计算,会将其存储在集合散列表的不同位置
+    (2)而当equals被重写,hashcode没有重写会有什么问题呢？比如重写了Student对象中的equals(),比较Student对象的name。此时两个相同name，
+    不同的Student对象，equals(）是返回true的。我们希望这两个对象被存在SET集合中只存一个。所以不得不重写hashcode()。若不重写根据
+    Object的hashcode()去计算,会将其存储在集合集合散列表的不同位置。违背了我们SET集合中只存一个的意愿
     
 # 6.[参考网址](https://www.cnblogs.com/Qian123/p/5703507.html)
