@@ -81,4 +81,5 @@
     不同的Student对象，equals(）是返回true的。我们希望这两个对象被存在SET集合中只存一个。所以不得不重写hashcode()。若不重写根据
     Object的hashcode()去计算,会将其存储在集合集合散列表的不同位置。违背了我们SET集合中只存一个的意愿
     
-# 6.[参考网址](https://www.cnblogs.com/Qian123/p/5703507.html)
+# 6.参考
+>https://www.cnblogs.com/Qian123/p/5703507.html
