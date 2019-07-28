@@ -34,7 +34,7 @@
 
     String类重写了equals()方法源码如下：
 
-```
+```java
     public boolean equals(Object anObject) {
         if (this == anObject) {
             return true;
