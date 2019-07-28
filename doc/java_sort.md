@@ -1,10 +1,10 @@
-package com.sort;
-
-
+# 1.冒泡排序
+```java
 /**
  * 冒泡排序思路：
  * （1）每一趟把最大的一个数往下沉
  * （2）若某一趟没有发生交换，则说明已经有序，排序终止
+ * 
  * 最好时间复杂度o(N)
  * 最坏时间复杂度o(N*N)
  * 平均时间复杂度o(N*N)
@@ -26,7 +26,7 @@ public class Bubble {
         }
         return array;
     }
-
+    
     public static void main(String[] args){
 
         int[] data = {1,5,3,2};
@@ -36,3 +36,6 @@ public class Bubble {
         }
     }
 }
+```
+
+2. 快速排序

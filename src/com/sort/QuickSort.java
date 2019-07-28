@@ -1,31 +1,54 @@
 package com.sort;
 
+/**
+ *快速排序:
+ *从数列中挑出一个元素，称为 “基准”（base）；
+ *重新排序数列，所有元素比基准值小的摆放在基准前面，所有元素比基准值大的摆在基准的后面（相同的数可以到任一边）。
+ *在这个分区退出之后，该基准就处于数列的中间位置。这个称为分区（partition）操作；
+ *递归地（recursive）把小于基准值元素的子数列和大于基准值元素的子数列排序。
+ *
+ * 复杂度：
+ * 平均：o(n*log(n))
+ * 最好：o(n*log(n))
+ * 最坏：o(n*n)
+ * 空间：o(nlog(n))
+ */
 public class QuickSort   {
 
-    public static int[] quick(int left,int right, int[] a){
-        if (right<left)
+    public static int[] quick(int left,int right, int[] arrays){
+        if (left>right){
             return new int[]{};
-        int base,i,j;
-        i=left;
-        j=right;
-        base = a[left];
+        }
+
+        int i = left;
+        int j = right;
+        int base = arrays[i];
+
         while (i<j){
-            while (a[j]>=base&&i<j)j--;
-            while (a[i]<=base&&i<j)i++;
+            while (arrays[j]>=base && i<j){
+                j--;
+            }
+            while (arrays[i]<=base && i<j){
+                i++;
+            }
+
             if (i<j){
-                int temp = a[i];
-                a[i]=a[j];
-                a[j]=temp;
+                int temp = arrays[i];
+                arrays[i] = arrays[j];
+                arrays[j] = temp;
             }
         }
-        a[left] = a[i];
-        a[i] = base;
-        //一个循环走完一趟
-        quick(left,i-1,a);
-        quick(i+1,right,a);
 
-        return a;
+        arrays[left] = arrays[i];
+        arrays[i] = base;// 一趟排序结束
+
+        quick(left, i-1, arrays);
+        quick(i+1,right,arrays);
+
+        return arrays;
+
     }
+
 
     public static void main(String[] args){
         int[] array={18,15,6,67,8,19};
@@ -34,13 +57,8 @@ public class QuickSort   {
         for (int i=0;i<result.length;i++){
             System.out.println(result[i]);
         }
-        String s = "aaaa";
 
     }
 
 }
-/**
- *
- * 1.所有对象继承与Object,equals是Object中的方法，Object中的equals调用了"=="
- */
 
