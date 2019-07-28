@@ -38,7 +38,7 @@ public class Bubble {
 }
 ```
 
-2. 快速排序
+# 2. 快速排序
 ```java
 /**
  *快速排序:
