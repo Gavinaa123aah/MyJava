@@ -1,5 +1,8 @@
 package com.sort;
 
+/**
+ * 二分查找
+ */
 public class BinarySearch {
     static int funBinSearch(int[] array, int data) {
 
@@ -19,5 +22,13 @@ public class BinarySearch {
             }
         }
         return -1;
+    }
+
+    public static void main(String[] args){
+
+        int[] arrays = {1,2,2,5,7,8,10};
+
+        int result = funBinSearch(arrays,5);
+        System.out.println(result);
     }
 }

@@ -2,28 +2,45 @@ package com.MyThreads;
 
 public class MyThread extends Thread {
     private String name;
-    public MyThread(String name){
+    private int tag;
+    public static int flag = 1;
+    public static int count = 0;
 
+
+
+    public MyThread(String name,int tag){
         this.name = name;
-
+        this.tag = tag;
     }
+
     @Override
     public void run() {
-        for (int i =0;i<10;i++) {
-            try {
-                sleep((int) Math.random() * 10);
-            }catch (InterruptedException e){
-                System.out.println(e.getStackTrace());
-            }
 
-            System.out.println(this.name);
-        }
+            while (true) {
+                if (count>=9){
+                    break;
+                }
+                if (flag == this.tag) {
+                    System.out.println(this.name);
+                    if (flag == 3) {
+                        flag = 1;
+                    } else if (flag == 2) {
+                        flag = 3;
+                    } else {
+                        flag = 2;
+                    }
+                    count++;
+                } else {
+                    continue;
+                }
+
+            }
     }
 
     public static void main(String[] args){
-        MyThread t1 = new MyThread("1111111");
-        MyThread t2 = new MyThread("222222");
-        MyThread t3 = new MyThread("3333333");
+        MyThread t1 = new MyThread("a",1);
+        MyThread t2 = new MyThread("b",2);
+        MyThread t3 = new MyThread("c",3);
 
         t1.start();
         t2.start();

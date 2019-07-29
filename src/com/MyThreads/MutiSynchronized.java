@@ -17,7 +17,7 @@ public class MutiSynchronized implements Runnable{
     public void run() {
        while (true) {
            synchronized (this){
-           if (count >= max) break;
+           if (count == max) break;
            else if (tag == flag) {
                System.out.println(this.data);
                count++;
