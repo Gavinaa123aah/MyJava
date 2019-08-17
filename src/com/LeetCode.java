@@ -1,50 +1,29 @@
 package com;
 
+import javax.swing.tree.TreeNode;
 import java.util.*;
 
 
 public class LeetCode {
-    public static void main(String[] args){
 
+
+
+    public boolean searchMatrix(int[][] matrix, int target) {
+        return search(matrix, target, 0, matrix.length*matrix[0].length -1);
     }
 
-    public List<List<Integer>> threeSum(int[] nums) {
-        Set<List<Integer>> results = new HashSet<>();
-        Map<Integer,Integer> map = getMap(nums);
+    public boolean search(int[][] matrix, int target, int start, int end){
+        int row = (end)/matrix[0].length;
+        int column = (end)%matrix[0].length;
+        if(start==end)
+            return target==matrix[row][column];
 
-        Set<Integer> setA = new HashSet<>();
-        for(int i=0;i<nums.length;i++){
-           if(!setA.add(nums[i]))
-               continue;
+        int mid = (start) +(end-start)/2;
+        if(target<= matrix[mid/matrix[0].length][mid%matrix[0].length])
+            return search(matrix, target, start, mid);
+        else
+            return search(matrix, target, mid+1, end);
 
-            Set<Integer> setB = new HashSet<>();
-            for(int k=i+1;k<nums.length;k++){
-                if (!setB.add(nums[k]))
-                    continue;
-                Integer aim = 0-nums[i]-nums[k];
-                Integer tem = map.get(aim);
-                if(tem!=null&& tem!=k && tem!=i){
-                    List<Integer> list = new ArrayList<>();
-                    list.add(nums[i]);
-                    list.add(nums[k]);
-                    list.add(nums[tem]);
-                    Collections.sort(list);
-                    results.add(list);
-                }
 
-            }
-
-        }
-        return new ArrayList<>(results);
-    }
-
-    Map<Integer,Integer> getMap(int[] nums){
-        Map<Integer,Integer> map = new TreeMap<>();
-        for (int i=0;i<nums.length;i++){
-            if(!map.containsKey(nums[i])){
-                map.put(nums[i],i);
-            }
-        }
-        return map;
     }
 }

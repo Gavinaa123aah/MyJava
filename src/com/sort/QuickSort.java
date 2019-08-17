@@ -16,7 +16,7 @@ package com.sort;
 public class QuickSort   {
 
     public static int[] quick(int left,int right, int[] arrays){
-        if (left>right){
+        if (left>=right){
             return new int[]{};
         }
 
