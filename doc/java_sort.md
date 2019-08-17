@@ -188,7 +188,7 @@ public class SelectSort {
 }
 ```
 
-#5. 归并排序
+# 5. 归并排序
 ```java
 /**
  * 归并排序
