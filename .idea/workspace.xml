@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="64d5385a-fdce-4bf5-b289-12f814f893f2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/doc/binaryTree.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/exception.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/myException/BankDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/myException/CheckingAccount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/myException/InsufficientFundsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/sort/MergeSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/java_sort.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/java_sort.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/grammer_java/Hello.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/grammer_java/Hello.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/grammer_java/com/LeetCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/grammer_java/com/LeetCode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/grammer_java/com/sort/QuickSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/grammer_java/com/sort/QuickSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hello.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/LeetCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/LeetCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sort/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sort/QuickSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tree/BinaryTreeTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tree/BinaryTreeTraversal.java" afterDir="false" />
-    </list>
+    <list default="true" id="64d5385a-fdce-4bf5-b289-12f814f893f2" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -344,7 +328,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566059185909" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566063980367" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
@@ -464,12 +448,12 @@
       <workItem from="1560150066745" duration="4561000" />
       <workItem from="1563981414934" duration="34512000" />
       <workItem from="1564409377655" duration="4226000" />
-      <workItem from="1565439612217" duration="20940000" />
+      <workItem from="1565439612217" duration="20941000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68757000" />
+    <option name="totallyTimeSpent" value="68758000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="813" extended-state="0" />
