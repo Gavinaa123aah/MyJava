@@ -41,6 +41,7 @@ public class Bubble {
 ```
 
 # 2. 快速排序
+![快排时间复杂度](pics/sort/quick_sort_time_complexity.jpeg)
 ```java
 /**
  *快速排序:
@@ -54,6 +55,8 @@ public class Bubble {
  * 最好：o(n*log(n))
  * 最坏：o(n*n)
  * 空间：o(nlog(n))
+ * 
+ * 假设有16个元素，
  */
 public class QuickSort   {
 

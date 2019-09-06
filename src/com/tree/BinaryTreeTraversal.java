@@ -37,14 +37,14 @@ public class BinaryTreeTraversal {
 
 
     public static void postOrderRec(Node root){
-        if(root!=null){
+        if (root!=null){
             postOrderRec(root.left);
             postOrderRec(root.right);
             System.out.println(root.value);
         }
     }
 
-
+    List<Integer> ret= new ArrayList<Integer>();
     /**
      * 先序遍历非递归
      * @param root
@@ -111,6 +111,7 @@ public class BinaryTreeTraversal {
         }
 
     }
+
 
 
     public static void main(String[] args){

@@ -1,5 +1,11 @@
 package com.sort;
 
+
+import com.advance.lambda.A;
+
+import java.util.Arrays;
+import java.util.Stack;
+
 /**
  *快速排序:
  *从数列中挑出一个元素，称为 “基准”（base）；
@@ -15,9 +21,10 @@ package com.sort;
  */
 public class QuickSort   {
 
+
     public static int[] quick(int left,int right, int[] arrays){
         if (left>=right){
-            return new int[]{};
+            return arrays;
         }
 
         int i = left;
@@ -42,7 +49,7 @@ public class QuickSort   {
         arrays[left] = arrays[i];
         arrays[i] = base;// 一趟排序结束
 
-        quick(left, i-1, arrays);
+        quick(0, i-1, arrays);
         quick(i+1,right,arrays);
 
         return arrays;
@@ -50,10 +57,66 @@ public class QuickSort   {
     }
 
 
-    public static void main(String[] args){
-        int[] array={18,15,6,67,8,19};
-        int result[] = quick(0,array.length-1,array);
+    public static int[] qucickSort(int[] arrays){
+        if (arrays.length<2){
+            return arrays;
+        }
 
+        int left = 0;
+        int right = arrays.length-1;
+        int i = left;
+        int j = right;
+        int pivot = arrays[i];
+
+        while (i<j){
+            while (arrays[j]>=pivot && i<j){
+                j--;
+            }
+
+            while (arrays[i]<=pivot && i<j){
+                i++;
+            }
+
+            if (i<j){
+                int temp = arrays[i];
+                arrays[i] = arrays[j];
+                arrays[j] = temp;
+            }
+
+        }
+
+        arrays[left] = arrays[i];
+        arrays[i] = pivot;
+
+        int[] leftArrays = Arrays.copyOfRange(arrays,left,i);
+        int[] rightArrays = Arrays.copyOfRange(arrays,i,right);
+        qucickSort(leftArrays);
+        qucickSort(rightArrays);
+
+        return arrays;
+
+    }
+    public boolean IsPopOrder(int [] pushA,int [] popA) {
+        Stack<Integer> stack = new Stack<>();
+
+        int popLocation = 0;
+        for (int i=0;i<pushA.length;i++){
+            stack.push(pushA[i]);
+            while (!stack.isEmpty() && stack.peek()==popA[popLocation]){
+                stack.pop();
+                popLocation++;
+            }
+        }
+        if (stack.isEmpty())
+            return true;
+        else
+            return false;
+    }
+    public static void main(String[] args){
+        int[] array={2};
+//        int result[] = quick(0,array.length-1,array);
+
+        int[] result = qucickSort(array);
         for (int i=0;i<result.length;i++){
             System.out.println(result[i]);
         }

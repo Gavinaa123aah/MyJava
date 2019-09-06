@@ -7,7 +7,7 @@ public class BinarySearch {
     static int funBinSearch(int[] array, int data) {
 
         int low = 0;
-        int high = array.length - 1;
+        int high = array.length;
 
         while (low <= high) {
 
@@ -26,9 +26,9 @@ public class BinarySearch {
 
     public static void main(String[] args){
 
-        int[] arrays = {1,2,2,5,7,8,10};
+        int[] arrays = {1,2,3,5,7,8,10};
 
-        int result = funBinSearch(arrays,5);
+        int result = funBinSearch(arrays,7);
         System.out.println(result);
     }
 }
