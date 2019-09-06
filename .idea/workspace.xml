@@ -1,32 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="64d5385a-fdce-4bf5-b289-12f814f893f2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/MyThreads/MyNewCacheThreadPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/MyThreads/MyNewFixedThreadPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/MyThreads/MyNewScheduledThreadPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/MyThreads/MyNewSingleThreadExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/java_gc.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/java_gc.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doc/java_sort.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/java_sort.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/grammer_java/LeetCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/grammer_java/LeetCode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/grammer_java/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/grammer_java/TreeNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/grammer_java/com/LeetCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/grammer_java/com/LeetCode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/grammer_java/com/MyThreads/MyThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/grammer_java/com/MyThreads/MyThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/grammer_java/com/MyThreads/MythreadPool.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/grammer_java/com/MyThreads/PrintABC.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/grammer_java/com/MyThreads/PrintABC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/grammer_java/com/sort/BinarySearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/grammer_java/com/sort/BinarySearch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/grammer_java/com/sort/QuickSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/grammer_java/com/sort/QuickSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/grammer_java/com/tree/BinaryTreeTraversal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/grammer_java/com/tree/BinaryTreeTraversal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LeetCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LeetCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/LeetCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/LeetCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/MyThreads/MyThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/MyThreads/MyThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/MyThreads/MythreadPool.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/MyThreads/PrintABC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/MyThreads/PrintABC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sort/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sort/BinarySearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/sort/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sort/QuickSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tree/BinaryTreeTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tree/BinaryTreeTraversal.java" afterDir="false" />
-    </list>
+    <list default="true" id="64d5385a-fdce-4bf5-b289-12f814f893f2" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -331,13 +306,6 @@
               <item name="grammer_java" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="MyThreads" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="grammer_java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="grammer_java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="tree" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -350,7 +318,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567766436337" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1567767402655" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
@@ -472,18 +440,17 @@
       <workItem from="1564409377655" duration="4226000" />
       <workItem from="1565439612217" duration="40237000" />
       <workItem from="1567216083388" duration="2718000" />
-      <workItem from="1567260671157" duration="27691000" />
+      <workItem from="1567260671157" duration="28004000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118463000" />
+    <option name="totallyTimeSpent" value="118776000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21459228" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21459228" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -492,7 +459,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26524824" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26524824" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.34184396" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
