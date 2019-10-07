@@ -5,6 +5,23 @@ import java.util.concurrent.ConcurrentHashMap;
 
 class IP{
     String ip;
+
+    public String getIp() {
+        return ip;
+    }
+
+    public void setIp(String ip) {
+        this.ip = ip;
+    }
+
+    public int getFlag() {
+        return flag;
+    }
+
+    public void setFlag(int flag) {
+        this.flag = flag;
+    }
+
     int flag;
     public IP(String ip, int flag){
         this.ip=ip;
@@ -12,44 +29,39 @@ class IP{
          }
     }
 
-public class B extends Thread{
-    static ConcurrentHashMap<Integer,IP> m = new ConcurrentHashMap<>();
-    public void run(){
-        for (int i=0;i<10;i++){
-            IP ip = null;
-            Random random = new Random();
-            int random_temp = random.nextInt(8);
-            ip=m.get(random_temp);
-            while (ip.flag==1){
-                random_temp = random.nextInt(8);
-                ip=m.get(random_temp);
+public class B{
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int zushu = in.nextInt();
+        int n = in.nextInt();// 点数
+        int m = in.nextInt();// 边数
+
+        for(int i=0;i<zushu;i++){
+
+            byte[][] arr = new byte[n][n];
+
+            for(int j=0;j<m;j++){
+                int out = in.nextInt();
+                int inin = in.nextInt();
+                arr[out-1][inin-1] = 1;
             }
-            ip.flag=1;
-            m.put(random_temp,ip);
-            try {
-                Thread.sleep(100);
-            }catch (InterruptedException e){
-                e.printStackTrace();
+            if (arr[0][n-1]==1){
+                System.out.print("POSSIBLE");
+                return;
             }
-            System.out.println("线程ID:"+Thread.currentThread().getId()+"--使用ip"+ip.ip);
-            ip.flag=0;
-            m.put(random_temp,ip);
-        }
-    }
-    public static void main(String[] args){
-        m.put(0,new IP("202.205.101.9",0));
-        m.put(1,new IP("202.205.101.10",0));
-        m.put(2,new IP("202.205.101.11",0));
-        m.put(3,new IP("202.205.101.12",0));
-        m.put(4,new IP("202.205.101.13",0));
-        m.put(5,new IP("202.205.101.14",0));
-        m.put(6,new IP("202.205.101.15",0));
-        m.put(7,new IP("202.205.101.16",0));
-        for (int i=0;i<50;i++){
-            B temp = new B();
-            temp.start();
-        }
+
+
+            for(int p=0;p<n;p++){
+                if(arr[p][n-1]==1 && arr[0][p]==1){
+                    System.out.print("POSSIBLE");
+                    return;
+                }
+            }
 
         }
+
+        System.out.print("IMPOSSIBLE");
+    }
     }
 

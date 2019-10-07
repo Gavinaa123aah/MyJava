@@ -19,7 +19,7 @@ import java.text.MessageFormat;
 public class TestObjSerializeAndDeserialize {
 
     public static void main(String[] args) throws Exception {
-        SerializePerson();//序列化Person对象
+//        SerializePerson();//序列化Person对象
         Person p = DeserializePerson();//反序列Perons对象
         System.out.println(MessageFormat.format("name={0},age={1},sex={2}",
                 p.getName(), p.getAge(), p.getSex()));

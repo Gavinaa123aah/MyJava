@@ -1,29 +1,28 @@
 package com;
 
-
-import com.sun.deploy.util.StringUtils;
-
-import javax.swing.tree.TreeNode;
 import java.util.*;
 
-public class LeetCode {
+class Main {
+    public boolean isValid(String s) {
+        Stack<Character> stack = new Stack();
 
-    public static int lengthOfLongestSubstring(String s) {
-        int n = s.length(), ans = 0;
-        Map<Character, Integer> map = new HashMap<>(); // current index of character
-        // try to extend the range [i, j]
-        for (int j = 0, i = 0; j < n; j++) {
-            if (map.containsKey(s.charAt(j))) {
-                i = Math.max(map.get(s.charAt(j)), i);
+        char[] arr = s.toCharArray();
+
+        for (int i=0;i<arr.length;i++){
+            if (arr[i]=='('){
+                stack.push(')');
+            }else if (arr[i]== '['){
+                stack.push(']');
+            }else if (arr[i]== '{'){
+                stack.push('}');
+            }else {
+                if (stack.isEmpty() || stack.pop()!=arr[i]){
+                    return false;
+                }
             }
-            ans = Math.max(ans, j - i + 1);
-            map.put(s.charAt(j), j + 1);
         }
-        return ans;
+
+        return stack.isEmpty();
     }
 
-    public static void main(String[] args){
-
-        lengthOfLongestSubstring("abcabcbb");
-    }
 }

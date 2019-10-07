@@ -19,6 +19,8 @@ public class BankDemo {
             c.withdraw(600.00);
         }catch(InsufficientFundsException e)
         {
+
+
             System.out.println("Sorry, but you are short $"
                     + e.getAmount());
             e.printStackTrace();

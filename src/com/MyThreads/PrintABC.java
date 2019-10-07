@@ -27,7 +27,7 @@ public class PrintABC implements Runnable{
                 try {
                     prev.wait();// 线程在这个地方停住,等待唤醒;1000是防止最后死锁
                 } catch (InterruptedException e) {
-                    e.printStackTrace();
+//                    e.printStackTrace();
                     System.out.println("已捕获");
                 }
             }
@@ -36,7 +36,7 @@ public class PrintABC implements Runnable{
 
     }
 
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args){
 
         Object a = new Object();
         Object b = new Object();
@@ -48,12 +48,18 @@ public class PrintABC implements Runnable{
 
         Thread thread3 = new Thread(new PrintABC("C", b, c));
 
-        thread1.start();
-        Thread.sleep(10);
-        thread2.start();
-        Thread.sleep(10);
-        thread3.start();
-        Thread.sleep(10);
+
+        try {
+            thread1.start();
+            Thread.sleep(10);
+            thread2.start();
+            Thread.sleep(10);
+            thread3.start();
+            Thread.sleep(10);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
 
         thread2.interrupt();
         thread3.interrupt();

@@ -5,7 +5,7 @@ package com.myException;
  * @Author Gavin
  * @Date 2019/8/13 上午12:20
  **/
-public class InsufficientFundsException extends Exception {
+public class InsufficientFundsException extends RuntimeException {
     private double amount;
     public InsufficientFundsException(double amount)
     {
